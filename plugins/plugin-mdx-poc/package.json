@@ -1,0 +1,8 @@
+{
+  "name": "plugin-mdx-poc",
+  "version": "0.0.1",
+  "main": "index.js",
+  "keywords": ["gatsby-plugin"],
+  "author": "Asuki Yamashita",
+  "license": "MIT"
+}

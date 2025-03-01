@@ -1,10 +1,14 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
-module.exports = {
+const config = {
   siteMetadata: {
     title: `mdx-poc`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
-}
+  plugins: [
+    `plugin-mdx-poc`
+  ],
+};
+
+export default config;
