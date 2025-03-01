@@ -26,11 +26,17 @@ const config = {
         }
       }
     },
+    // {
+    //   resolve: `gatsby-plugin-page-creator`,
+    //   options: {
+    //     path: `${__dirname}/contents`
+    //   }
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `contents`,
-        path: `${__dirname}/contents`
+        path: `${__dirname}/src/pages`
       }
     }
   ],
