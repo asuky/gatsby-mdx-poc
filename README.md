@@ -1,7 +1,7 @@
 # Gatsby MDX 検証
 
 ## 前提
-- [Gatsby](https://www.gatsbyjs.com/) の一番新しい Major を使う
+- [Gatsby](https://www.gatsbyjs.com/) の一番新しい starter を使う
   - npm init gatsby で設定されるものを使う
 - TypeScript を使わない
   - Gatsby 側の TypeScript 対応が怪しい気がしており、TypeScript 起因の問題があったときに切り分けが難しくなるため
@@ -13,10 +13,12 @@
 
 ## やること
 
-- [] #1
+- [ ] #1
 
 
 ## メモ
+- [gatsby-plugin-mdx](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/)
+
 - npm init mdx gatsby は現状動いてない
 ```sh
 $ npm init mdx gatsby
