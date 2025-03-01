@@ -19,9 +19,11 @@
     "gatsby": "^5.14.1",
     "gatsby-plugin-mdx": "^5.14.0",
     "gatsby-plugin-page-creator": "^5.14.0",
+    "gatsby-remark-images": "^7.14.0",
     "gatsby-source-filesystem": "^5.14.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "remark-gfm": "^4.0.1",
     "url": "^0.11.4"
   }
 }

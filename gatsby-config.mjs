@@ -1,8 +1,12 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
-import { dirname } from 'path';
+import { dirname, resolve } from 'path';
+import { fileURLToPath } from 'url';
 
+import remarkGfm from 'remark-gfm';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const config = {
   siteMetadata: {
@@ -11,7 +15,17 @@ const config = {
   },
   plugins: [
     `plugin-mdx-poc`,
-    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        mdxOptions: {
+          remarkPlugins: [
+            remarkGfm
+          ]
+        }
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
