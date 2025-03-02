@@ -5,6 +5,7 @@
   - npm init gatsby で設定されるものを使う
 - TypeScript を使わない
   - Gatsby 側の TypeScript 対応が怪しい気がしており、TypeScript 起因の問題があったときに切り分けが難しくなるため
+  - [こういう issue とか](https://github.com/gatsbyjs/gatsby/issues/38927)（変数名以外同じエラーを見た）
 - 必要最小限のパッケージを使うようにする
 - onPreInit か onPreBootstrap で mdx ファイルを直接出力する非同期処理を挟む
   - Gatsby の処理前に何かしたいため（こういうケースは多いと思う）
@@ -13,12 +14,15 @@
 
 ## やること
 
-- [ ] #3
-- [ ] #1
-
+- [ ] onPreInit からの処理
+- [ ] 動的ページ生成
+- [X] 最低限動作
+- [X] 初期設定
 
 
 ## メモ
+- remark-gfm は 3.0.1 を使う（現時点でエラーが出るので）
+
 - [gatsby-plugin-mdx](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/)
 
 - npm init mdx gatsby は現状動いてない
